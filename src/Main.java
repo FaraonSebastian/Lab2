@@ -19,6 +19,6 @@ public class Main {
         Triangle tri3 = new Triangle(1.1F, 2.0F, "brown");
         System.out.println("Triangle3 equals to Triangle1: " + tri.equals(tri3));
 
-        System.out.println("Număr total de instanțe create: " + Form.getCounter());
+        System.out.println("nr total de instante este: " +Form.getCounter());
     }
 }
