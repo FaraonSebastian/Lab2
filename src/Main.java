@@ -2,6 +2,7 @@ import ro.ulbs.paradigme.lab2.Circle;
 import ro.ulbs.paradigme.lab2.Form;
 import ro.ulbs.paradigme.lab2.Square;
 import ro.ulbs.paradigme.lab2.Triangle;
+import ro.ulbs.paradigme.lab3.util.PasswordMaker.PasswordMaker;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +21,13 @@ public class Main {
         System.out.println("Triangle3 equals to Triangle1: " + tri.equals(tri3));
 
         System.out.println("nr total de instante este: " +Form.getCounter());
+
+        PasswordMaker pm1 = PasswordMaker.getInstance();
+        System.out.println("Generated password: " + pm1.getPassword());
+
+        PasswordMaker pm2 = PasswordMaker.getInstance();
+        System.out.println("Generated password: " + pm2.getPassword());
+
+        System.out.println("Număr de accesări ale instantei: " + PasswordMaker.getInstanceCount());
     }
 }
